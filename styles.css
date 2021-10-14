@@ -78,11 +78,56 @@ li a{ /* remove underline from list*/
 .testing{
     margin: 0 10em 0 10em;
     background-color: rgb(184, 184, 212);/*TEMPORARY EDITING PURPOSES */
+    height: 18em;
 }
+
 .testing .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-column-gap: 7rem;
 }
+
+.testing-desciption{
+    padding: 3em;
+    height: 6em;
+}
+
+.stories{
+    margin: 0;
+}
+
+.stories .container article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+article img{
+    width: 16em;
+}
+
+.newsletter{
+    margin: 0 10em 0 10em;
+    background-color: rgb(189, 207, 171); /*TEMPORARY EDITING PURPOSES!! */
+}
+
+.newsletter .container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+   display: flex;
+   flex-direction: row;
+}
+
+footer{
+    height: 2em;
+    background-color: cornflowerblue;
+    margin: 0 10em 0 10em;
+}
+
 
