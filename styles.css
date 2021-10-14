@@ -9,3 +9,80 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+.container h1{
+    font-size: 20px;
+}
+
+header .container{/* "splits" header section into  2 columns*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{ /*displays the nav tags in one line*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header nav li {
+    list-style-type: none; /* removes bullets from list*/
+    margin: 1em; /* addsa space between the li elements*/
+}
+
+li a{ /* remove underline from list*/
+    text-decoration: none;
+}
+
+/**/
+.overview-hero .container{
+    display: grid;
+    align-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+.overview-hero{
+    background-color:rgb(131, 167, 207);
+    margin: 0 10em 0 10em;/* (top, right, bottom, and left).*/
+}
+
+.overview-hero-image img{
+    float: right;
+	width: 15em;
+    padding: 5em;
+}
+
+.learn-about{
+    margin: 0;
+}
+
+.learn-about .container{
+    margin: 0 13em 0 13em;
+}
+
+.learn-about .container .cards{
+    display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5rem;
+	grid-row-gap: 1rem;
+    height: 35em;
+    margin: 0;
+}
+
+.card img{
+    width:15em;
+    padding: 3em;
+    margin: 0;
+}
+
+.testing{
+    margin: 0 10em 0 10em;
+    background-color: rgb(184, 184, 212);/*TEMPORARY EDITING PURPOSES */
+}
+.testing .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 7rem;
+}
+
