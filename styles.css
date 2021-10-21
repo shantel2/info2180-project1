@@ -169,7 +169,7 @@ li a:hover{
 }
 
 article{
-    margin: 1.3em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 article img{
@@ -225,12 +225,8 @@ footer{
     height: 60px;
     background-color:#4A5568;
     color: white;
-    margin: 0 10em 5em 10em;
+    margin: 0 10em 1em 10em;
 
-}
-
-footer .container{
-    padding: .5em;
 }
 
 footer .container p{
