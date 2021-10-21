@@ -195,7 +195,7 @@ article img{
 .form-group input{
     border: none;
     border-radius: 5px;
-    padding: 15px 20px;
+    padding: 15px 60px;
     width: 80%;
 }
 
@@ -204,7 +204,7 @@ button{
     color: white;
     border-radius: 5px;
     border: none;
-    padding: 15px 20px;
+    padding: 15px 40px;
     margin-left: 1em;
 }
 
@@ -224,7 +224,16 @@ footer{
     height: 60px;
     background-color:#4A5568;
     color: white;
-    margin: 0 10em 0 10em;
+    margin: 0 10em 5em 10em;
+
+}
+
+footer .container{
+    padding: 1em;
+}
+
+footer .container p{
+    margin: 0;
 }
 
 
