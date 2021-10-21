@@ -1,7 +1,9 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    padding: 0;
+    font-size: 18px;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
@@ -11,10 +13,14 @@ body {
 }
 
 .container h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 
-header .container{/* "splits" header section into  2 columns*/
+header{
+    background-color: white;
+}
+
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,28 +33,35 @@ header ul{ /*displays the nav tags in one line*/
 
 header nav li {
     list-style-type: none; /* removes bullets from list*/
-    margin: 1em; /* addsa space between the li elements*/
+    margin: 1em; /* adds a space between the li elements*/
 }
 
 li a{ /* remove underline from list*/
     text-decoration: none;
+    color: #6b7280;
 }
 
-/**/
+li a:hover{
+    color: #5A67D8 ;
+}
+
 .overview-hero .container{
     display: grid;
     align-items: center;
 	grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
 }
 .overview-hero{
-    background-color:rgb(131, 167, 207);
+    background-color:#E2E8F0;
     margin: 0 10em 0 10em;/* (top, right, bottom, and left).*/
+    height: 15em;
+    margin-bottom: 3em;
 }
 
 .overview-hero-image img{
     float: right;
 	width: 15em;
-    padding: 5em;
+    padding: 2em;
 }
 
 .learn-about{
@@ -56,7 +69,12 @@ li a{ /* remove underline from list*/
 }
 
 .learn-about .container{
-    margin: 0 13em 0 13em;
+    align-items: center;
+}
+
+.learn-about .container h2{
+    font-size: 24px;
+    color: #48BB78;
 }
 
 .learn-about .container .cards{
@@ -69,47 +87,125 @@ li a{ /* remove underline from list*/
     margin: 0;
 }
 
+.card-body h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.card {
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    box-shadow: 1px 3px #e2e8f0;
+    width: 250px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
 .card img{
-    width:15em;
-    padding: 3em;
-    margin: 0;
+    padding-top: 3em;
+    height: 140px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .testing{
     margin: 0 10em 0 10em;
-    background-color: rgb(184, 184, 212);/*TEMPORARY EDITING PURPOSES */
+    background-color:#4A5568;
+    color: white;
     height: 18em;
+}
+
+
+.testing .cta{
+    background-color: #48BB78;
+    border: 1px solid #48BB78;;
+    border-radius: 5px;
+    width: fit-content;
+    height: 40px;
+    margin-top: 60px;
+}
+
+.testing .cta .btn{
+    color: white;
+    padding: 5px 25px; 
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .testing .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr .5fr;
     align-items: center;
     grid-column-gap: 7rem;
 }
 
+
 .testing-desciption{
     padding: 3em;
     height: 6em;
+    width: 95%;
 }
 
 .stories{
-    margin: 0;
+    margin: 5em 0 5em 0;
+}
+
+.stories  h2, a{
+    color: #5A67D8;
+}
+
+.stories a{
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .stories .container article{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
     align-items: center;
 }
 
+article{
+    margin: 1.3em 0 0 0;
+}
+
 article img{
-    width: 16em;
+    width: 12em;
+    border-radius: 50%;
+    height: 12em;
 }
 
 .newsletter{
+    height: 12em;
     margin: 0 10em 0 10em;
-    background-color: rgb(189, 207, 171); /*TEMPORARY EDITING PURPOSES!! */
+    background-color: #48BB78;
+    color: white;
+    align-items: center;
+}
+
+.newsletter p{
+    padding: 0;
+    margin: 0 0 2em 0;
+    width: 28em;
+}
+
+.form-group input{
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 80%;
+}
+
+button{
+    background-color: #5A67D8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    margin-left: 1em;
 }
 
 .newsletter .container{
@@ -125,8 +221,9 @@ form{
 }
 
 footer{
-    height: 2em;
-    background-color: cornflowerblue;
+    height: 60px;
+    background-color:#4A5568;
+    color: white;
     margin: 0 10em 0 10em;
 }
 
