@@ -188,7 +188,7 @@ article img{
 
 .newsletter p{
     padding: 0;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     width: 28em;
 }
 
@@ -197,7 +197,6 @@ article img{
     width: 21em;
     border-radius: 5px;
     padding: 15px 30px;
-    text-indent: 10px; /* targets place holder*/
 }
 
 button{
